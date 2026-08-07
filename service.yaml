@@ -1,0 +1,10 @@
+name: device-registry-service
+port: 8900
+lang: python
+description: "device-registry-service \u2014 domain: devices"
+http_deps:
+- patients-service
+- audit-log-service
+publishes:
+- audit.event
+subscribes: []

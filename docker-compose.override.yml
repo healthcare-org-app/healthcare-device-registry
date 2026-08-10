@@ -1,7 +1,7 @@
 services:
   device-registry-service:
     build: .
-    container_name: ${NAME_UNDERSCORE}
+    container_name: device_registry_service
     depends_on:
       postgres:
         condition: service_healthy
